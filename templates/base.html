@@ -110,6 +110,61 @@
         .fa-sun {
             margin-right: 50px;
         }
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c2c2c;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .search-box {
+            display: flex;
+            border: 1px solid #ff4d4d;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .search-box input {
+            border: none;
+            padding: 8px 12px;
+            outline: none;
+            width: 200px;
+        }
+        .search-box button {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .menu li a {
+            text-decoration: none;
+            color: #2c2c2c;
+            font-weight: 500;
+        }
+        .icons {
+            display: flex;
+            gap: 16px;
+            font-size: 18px;
+            color: #2c2c2c;
+            cursor: pointer;
+        }
 
     </style>
 </head>
@@ -118,7 +173,7 @@
         <div class="location-wrapper">
             <div>
                 <span style="margin-right: 5px;"><i class="fa-solid fa-location-dot"></i></span>
-                <span id="location-text" >пределяем местоположение...</span>
+                <span id="location-text" >Определяем местоположение...</span>
             </div>
 
             <div>
@@ -140,6 +195,32 @@
             {% endfor %}
         </ul>
     </nav>
+
+    <nav class="navbar">
+    <div class="logo">
+      <img src="https://files.ox-sys.com/cache/800x_/image/65/98/e…76dfa21e6975fc4478fcd063b7faf3909611cbfaca647.png" alt="G-SHOP logo" />
+      <span>G-SHOP</span>
+    </div>
+
+    <div class="search-box">
+      <input type="text" placeholder="Поиск товаров..." />
+      <button>Найти</button>
+    </div>
+
+    <ul class="menu">
+      <li><a href="#">Мониторы</a></li>
+      <li><a href="#">Наушники</a></li>
+      <li><a href="#">Мыши</a></li>
+      <li><a href="#">Клавиатуры</a></li>
+    </ul>
+
+    <div class="icons">
+      <i class="fas fa-user"></i>
+      <i class="fas fa-heart"></i>
+      <i class="fas fa-balance-scale"></i>
+      <i class="fas fa-shopping-basket"></i>
+    </div>
+  </nav>
   
 
     <script>
